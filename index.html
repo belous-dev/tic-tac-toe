@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tic-Tac-Toe Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <script src="main.js"></script>
+        <div id="link-continue">
+            <input type="text" size="150" value="" id="link">
+            <button onclick="copyLink()">Copy Game Link</button>
+        </div>
+        <div id="ai-box">
+            <select id="ai-switcher" onchange="checkGameType()">
+                <option value="pvp">Player vs Player</option>
+                <option value="pvai">Player vs AI</option>
+              </select>
+        </div>
+        <table id="main-table">    
+            <tr>
+                <td id="cell-0"></td>
+                <td id="cell-1"></td>
+                <td id="cell-2"></td>
+            </tr>
+            <tr>
+                <td id="cell-3"></td>
+                <td id="cell-4"></td>
+                <td id="cell-5"></td>
+            </tr>
+            <tr>
+                <td id="cell-6"></td>
+                <td id="cell-7"></td>
+                <td id="cell-8"></td>
+            </tr>
+        </table>
+        <div id="message-box">
+            <div class='game-status'></div>
+            <div class='steps-count'></div>
+            <button onclick="newGameProcessing()">New Game</button>
+        </div>
+    </body>
+</html>
